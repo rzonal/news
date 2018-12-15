@@ -1,0 +1,324 @@
+@import 'reset.css';
+/* ----------------------- */
+body {
+    margin: 0 auto;
+    text-align: center;
+    background-color: #25CCF7;
+    background-image: url(../images.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+
+}
+   
+.containt {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.form {
+    text-align: center;
+   
+}
+p {
+    text-align: center;
+    width: 600px;
+    display: inline-block;
+    color: black;
+}
+/* JavaScript Tags Style  */
+.NewsItemView {
+    height: 600px;
+    padding: 3px;
+    margin: 5px;
+    background-color: #FFF;
+    overflow: hidden;
+    text-align: center;
+    display: inline-grid;
+    transition: 0.4s all ease-in-out;
+    box-shadow: 2px 2px 4px #999;
+    border-radius: 4px;
+}
+.NewsItemView:hover {
+    box-shadow: 2px 4px 4px #000;
+    background-color: #dcdde1;
+}
+.NewsImg {
+    height: 400px;
+    width: 600px;
+    max-width: 100%;
+    vertical-align: middle;
+    padding: 5px 5px 0px 5px;
+}
+ 
+a {
+    display: block;
+    width: 600px;
+    text-decoration: none;
+    line-height: 25px;
+    padding-top: 10px;
+}
+.language {
+    min-width: 240px;
+    height: 30px;
+    padding-left: 10px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 0 2px #000;
+    display: block;
+    margin: 50px auto 50px;
+    outline: none;
+}
+
+.container {
+    width: 590px;
+    margin: 140px auto;
+    position: relative;
+}
+
+blockquote {
+    width: 565px;
+    font: 2.65em CallunaRegular;
+    letter-spacing: .075em;
+    float: left;
+    padding: 45px 0 30px 25px;
+    margin: 0;
+    border-top: 2px dotted #9b4949;
+    border-bottom: 2px dotted #8d4242;
+}
+
+.container:before {
+    content: "“";
+    font-size: 13em;
+    position: absolute;
+    left: -100px;
+    color:  rgb(148, 64, 64);
+}
+
+.container:after {
+    content: "”";
+    font-size: 13em;
+    position: absolute;
+    right: -100px;
+    top: 150px;
+    color: rgb(148, 64, 64);
+}
+
+blockquote:first-line {
+    font: 1.65em "Sketch Block";
+    color: #fff79e;
+}
+
+blockquote:first-letter {
+    font-size: 2.5em;
+    line-height: .52em;
+    position: relative;
+    z-index: 1;
+}
+
+blockquote strong:first-child {
+    margin-left: 8px;
+    letter-spacing: 0;
+}
+
+blockquote strong:last-child {
+    font: 1.3em "Museo 700";
+    letter-spacing: 0;
+}
+
+blockquote em {
+    border-bottom: 2px dotted #858585;
+}
+
+blockquote + b {
+    float: right;
+    margin-top: 10px;
+    font: 1.6em CallunaRegular;
+    letter-spacing: .15em;
+}
+
+blockquote + b:first-letter {
+    color: #fff79e;
+    font-size: 1.3em;
+    font-style: italic;
+    letter-spacing: .25em;
+}
+
+@-moz-document url-prefix() { 
+
+    blockquote:first-letter {
+        margin-top: -29px;
+    }    
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+[class*="col-"] {
+    float: left;
+    margin: 0 auto;
+    text-align: center;
+    padding: 15px;
+}
+/* -------- Media Query ------- */
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media (min-width:800px) and (max-width:1440px){
+    .container:before {
+        content: "“";
+        font-size: 13em;
+        position: absolute;
+        left: -100px;
+        color: #666;
+    }
+    .container:after {
+        content: "”";
+        font-size: 13em;
+        position: absolute;
+        right: -100px;
+        top: 150px;
+        color: #666;
+    }
+    blockquote {
+        width: 90%;
+    }
+}
+@media (min-width:700px) and (max-width:800px){
+    .container:before {
+        font-size: 5em;
+        left: -10px;
+    }
+    .container:after {
+        font-size: 5em;
+        right: 0px;
+    }
+    blockquote {
+        width: 90%;
+    }
+}
+@media (min-width:500px) and (max-width:700px){
+    .container:before {
+        font-size: 2em;
+        left: 50px;
+    }
+    .container:after {
+        font-size: 2em;
+        right: 70px;
+    }
+    blockquote {
+        width: 90%;
+        font: 0.9em CallunaRegular;
+        border-top: none;
+        border-bottom: none;
+        margin: 0 auto;
+    }
+    .language {
+        min-width: 240px;
+        height: 30px;
+        display: block;
+        margin: 50px auto 50px;
+    }
+    .form{
+        display: grid;
+    }
+    .NewsItemView {
+        width: 98%;
+        margin: 15px auto;
+        height: fit-content;
+    }
+    .NewsImg {
+        width: 98%;
+        margin: 0 auto;
+        padding-top: 20px;
+        height: 200px;
+    }
+    blockquote + b {
+        float: none;
+    }
+    a {
+        width: 80%;
+        margin: 0 auto; 
+    }
+    p {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .containt {
+        width: 100%;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+    .container {
+        width: 90%;
+    }
+}
+@media (min-width:300px) and (max-width:500px){
+    .container:before {
+        font-size: 2em;
+        left: 50px;
+    }
+    .container:after {
+        font-size: 2em;
+        right: 70px;
+    }
+    blockquote {
+        width: 80%;
+        font: 1.2em CallunaRegular;
+        border-top: none;
+        border-bottom: none;
+    }
+    .language {
+        min-width: 240px;
+        height: 30px;
+        display: block;
+        margin: 50px auto 50px;
+    }
+    .form{
+        display: grid;
+    }
+    .NewsItemView {
+        width: 98%;
+        margin: 15px auto;
+        height: fit-content;
+    }
+    .NewsImg {
+        width: 98%;
+        margin: 0 auto;
+        padding-top: 20px;
+        height: 200px;
+    }
+    blockquote + b {
+        margin-right: 70px;
+    }
+    a {
+        width: 80%;
+        margin: 0 auto; 
+    }
+    p {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .containt {
+        width: 100%;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+    .container {
+        width: 90%;
+    }
+}
+
